@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ 
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="tasks">
+            <div id="ex1">
+                <h1>Password Validation Example</h1>
+                <form id="pswdForm">
+                    <!-- Enter Password -->
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" name="pass" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                        required />
+                    <!-- Click to reset fields -->
+                    <button type="submit" id="btnRst1">Reset</button>
+                </form>
+                <div id="checksField">
+                    <h3>Password must contain the following:</h3>
+                    <p id="letter" class="wrong">A <b>lowercase letter</b></p>
+                    <p id="capital" class="wrong">A <b>capital (uppercase) letter</b></p>
+                    <p id="number" class="wrong">A <b>number</b></p>
+                    <p id="speChar" class="wrong">A <b>special character</b></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="tasks">
+          <div id="ex2">
+            <h2>Customers</h2>
+            <div id="customerOutput"></div>
+
+        </div>
+    </div>
+
+
+        <div id="eX3">
+            <input type="button" class="button" id="btMenu" value="Menu">
+            <ul id="liMainMenu" class="ul">
+                <li>
+                    <input type="button" class="button" id="btStarter" value="Starter">
+                </li>
+                <li>
+                    <input type="button" class="button" id="btMain" value="Main">
+                </li>
+                <li>
+                    <input type="button" class="button" id="btDessert" value="Dessert">
+                </li>
+            </ul>
+            <ul id="liStarter" class="ul">
+                <li>
+                    <input type="button" class="button" id="btStarter1" value="">
+                </li>
+                <li>
+                    <input type="button" class="button" id="btStarter2" value="">
+                </li>
+                <li>
+                    <input type="button" class="button" id="btStarter3" value="">
+                </li>
+            </ul>
+            <ul id="liMain" class="ul">
+                <li>
+                    <input type="button" class="button" id="btMain1" value="">
+                </li>
+                <li>
+                    <input type="button" class="button" id="btMain2" value="">
+                </li>
+                <li>
+                    <input type="button" class="button" id="btMain3" value="">
+                </li>
+            </ul>
+            <ul id="liDessert" class="ul">
+                <li>
+                    <input type="button" class="button" id="btDessert1" value="">
+                </li>
+                <li>
+                    <input type="button" class="button" id="btDessert2" value="">
+                </li>
+                <li>
+                    <input type="button" class="button" id="btDessert3" value="">
+                </li>
+            </ul>
+            <table class="table">
+                <th>Your Order:</th>
+                <tr>
+                    <td>Starter :</td>
+                    <td id="selectedStarter"></td>
+                </tr>
+                <tr>
+                    <td>Main :</td>
+                    <td id="selectedMain"></td>
+                </tr>
+                <tr>
+                    <td>Dessert :</td>
+                    <td id="selectedDessert"></td>
+                </tr>
+                <tr>
+                    <td>Total :</td>
+                    <td id="total"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="group-header">
+                <span>12 oz.</span>
+                <span>34 oz.</span>
+            </div>
+
+            <h3>
+                <span>Fancy Food Item</span>
+                <span>25</span>
+                <span>56</span>
+            </h3>
+            <p>A well-written, appetite inspiring description that aims to inform the information and food deprived
+                consumer</p>
+            <h3>
+                <span>Fancy Food Item</span>
+                <span>25</span>
+                <span>56</span>
+            </h3>
+            <p>A well-written, appetite inspiring description that aims to inform the information and food deprived
+                consumer</p>
+            <h3>
+                <span>Fancy Food Item</span>
+                <span>25</span>
+                <span>56</span>
+            </h3>
+            <p>A well-written, appetite inspiring description that aims to inform the information and food deprived
+                consumer</p>
+        </div>
+
+
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
