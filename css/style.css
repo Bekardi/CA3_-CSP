@@ -1,124 +1,169 @@
-body{
+body {
     background-image: url(../img/bgWallpaperImg.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-color:#c1a272;
+    background-color: #c1a272;
 }
 
+
 /*-- Password */
+
 .tasks {
-  box-sizing: content-box;
-   margin: 40px 50px;
-   border-width: 10px;
- }
- #ex1{
-    margin: 50px 60px;
+    margin: 90px 110px;
+}
+
+#ex1 {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: content-box;
     border-width: 10px;
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 50px;
- }
- input {
+}
+
+input {
     width: 50%;
     padding: 12px;
     margin-top: 6px;
     margin-bottom: 16px;
- }
- input[type="submit"] {
+}
+
+input[type="submit"] {
     background-color: rgb(69, 27, 117);
     color: white;
     font-weight: bold;
     font-size: 20px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
- }
- #btnRst1 {
+}
+
+#btnRst1 {
     text-align: center;
     border-width: 5px;
     width: 50%;
     padding: 12px;
     background-color: white;
-    color:  rgb(69, 27, 117);
+    color: rgb(69, 27, 117);
     font-weight: bold;
     font-size: 20px;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
- }
- #pswdForm {
+}
+
+#pswdForm {
     padding: 20px;
- }
- #checksField {
+}
+
+#checksField {
     display: none;
     background: #f1f1f1;
     color: #000;
     position: relative;
     padding: 20px;
     margin-top: 10px;
- }
- #checksField p {
+}
+
+#checksField p {
     padding: 10px 35px;
     font-size: 18px;
- }
- .correct {
-    color:green;
- }
- .correct:before {
+}
+
+.correct {
+    color: green;
+}
+
+.correct:before {
     position: relative;
     left: -35px;
     content: "✔";
- }
- .wrong {
+}
+
+.wrong {
     color: red;
- }
- .wrong:before {
+}
+
+.wrong:before {
     position: relative;
     left: -35px;
     content: "✖";
- }
+}
 
 
 /*-- Customers  */
 
+#ex2 {
+    margin: 0cm 10cm;
+    padding: 15px;
+    text-align: center;
+    display: flexbox;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    font-size: 27px;
+    margin-bottom: 3cm;
+}
 
-#customerOutput{
-   display: flex;
-   flex-direction:row;
-   overflow: auto;
+#customerOutput {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato);
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
-
-
-.cardStyle{
-   display: flex;
-   justify-content: space-evenly;
-   border-radius: 50px;
-   border-width: 5px;
-   border: solid black;
-   padding: 75px 75px;
-
-  font-family: 'Lato', Arial, sans-serif;
-  color: #2B2B2B;
-  text-align: center;
-  flex-direction:row;
-  font-size: 16px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  max-width: 18%;
+.cardStyle {
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    border-width: 5px;
+    border: solid black;
+    padding: 75px 75px;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-family: 'Lato', Arial, sans-serif;
+    color: #2B2B2B;
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    max-width: 18%;
+    margin: 0px 30px
 }
-.
 
-
-.customerCard h2{
-   height: 50px;
-}
 .customerCard p {
-  font-family: 'Oswald';
-  text-transform: uppercase;
-  font-size: 15px;
-  font-weight: 400;
-  height: 50px;
- }
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+}
 
- 
+.customerImg {
+    border-radius: 50px;
+}
+
+
+/* width */
+
+div#customerOutput::-webkit-scrollbar {
+    width: 20px;
+}
+
+
+/* Track */
+
+div#customerOutput::-webkit-scrollbar-track {
+    box-shadow: inset #eeeeee;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+
+div#customerOutput::-webkit-scrollbar-thumb {
+    background: #00adb5;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+div#customerOutput::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
