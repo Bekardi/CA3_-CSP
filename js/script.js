@@ -68,12 +68,10 @@ function getRandom() {
             console.log(data);
             author.forEach(function(test) {
                 output += `
-        <div class="cardStyle">
-           <figure class="customerCard">
-             <div>
-              <img class="customerImg"src="${test.picture.large}"></div>
-              <figcaption>
+          <div class="customerCard">
+     
                    <ul>
+                   <img class="customerImg"src="${test.picture.large}">
                    <h2>Name: ${test.name.title + "."} ${test.name.first} ${test.name.last}</h2>
                   
                    <p>Phone Number: ${test.cell} </p>
@@ -87,9 +85,7 @@ function getRandom() {
                    
               
                    </ul>
-                   </figcaption>
-                   </figure>
-                   </div>`;
+              </div>`;
             });
 
             document.getElementById('customerOutput').innerHTML = output;
