@@ -12,6 +12,7 @@
         background-color: rgba(0, 0, 0, 0.26);
         position: fixed;
         width: 100%;
+        z-index: 9999;
         top: 0;
     }
     
@@ -60,7 +61,7 @@
         margin-bottom: 16px;
     }
     
-    div #btnRst1 {
+    div #btnCheck {
         text-align: center;
         border-radius: 50px;
         border-width: 5px;

@@ -15,7 +15,7 @@
     <header>
         <div class="topnav">
             <a class="active" href="#home">Home</a>
-            <a href="/">Our Menu</a>
+            <a href="rMenu.html" srs>Our Menu</a>
             <a href="#contact">Contact</a>
             <a href="#about">About</a>
         </div>
@@ -29,7 +29,7 @@
                     <label for="pass">Password</label>
                     <input type="password" id="pass" name="pass" placeholder="Enter password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
                     <!-- Click to reset fields -->
-                    <div><button type="submit" id="btnRst1">Reset</button></div>
+                    <div><button type="submit" id="btnCheck">Reset</button></div>
                 </form>
                 <div id="checksField">
                     <h3>Password must contain the following:</h3>
@@ -37,6 +37,7 @@
                     <p id="capital" class="wrong">A <b>capital (uppercase) letter</b></p>
                     <p id="number" class="wrong">A <b>number</b></p>
                     <p id="speChar" class="wrong">A <b>special character</b></p>
+                    <p id="passLength" class="wrong">A password should be <b>8 characters at a minimum</b></p>
                 </div>
             </div>
         </div>
