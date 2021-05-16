@@ -1,82 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/menuStyle.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <title>The Generics | Store</title>
+    <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="css/menuStyle.css" />
+
 </head>
 
 <body>
-    <input type="button" class="button" id="btMenu" value="Menu">
-    <ul id="liMainMenu" class="ul">
-        <li>
-            <input type="button" class="button" id="btStarter" value="Starter">
-        </li>
-        <li>
-            <input type="button" class="button" id="btMain" value="Main">
-        </li>
-        <li>
-            <input type="button" class="button" id="btDessert" value="Dessert">
-        </li>
-    </ul>
-    <ul id="liStarter" class="ul">
-        <li>
-            <input type="button" class="button" id="btStarter1" value="">
-        </li>
-        <li>
-            <input type="button" class="button" id="btStarter2" value="">
-        </li>
-        <li>
-            <input type="button" class="button" id="btStarter3" value="">
-        </li>
-    </ul>
-    <ul id="liMain" class="ul">
-        <li>
-            <input type="button" class="button" id="btMain1" value="">
-        </li>
-        <li>
-            <input type="button" class="button" id="btMain2" value="">
-        </li>
-        <li>
-            <input type="button" class="button" id="btMain3" value="">
-        </li>
-    </ul>
-    <ul id="liDessert" class="ul">
-        <li>
-            <input type="button" class="button" id="btDessert1" value="">
-        </li>
-        <li>
-            <input type="button" class="button" id="btDessert2" value="">
-        </li>
-        <li>
-            <input type="button" class="button" id="btDessert3" value="">
-        </li>
-    </ul>
-    <table class="table">
-        <th>Your Order:</th>
-        <tr>
-            <td>Starter :</td>
-            <td id="selectedStarter"></td>
-        </tr>
-        <tr>
-            <td>Main :</td>
-            <td id="selectedMain"></td>
-        </tr>
-        <tr>
-            <td>Dessert :</td>
-            <td id="selectedDessert"></td>
-        </tr>
-        <tr>
-            <td>Total :</td>
-            <td id="total"></td>
-        </tr>
-    </table>
-    <script src="js/restaurantMenu.js"></script>
+    <header>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="rMenu.html" srs>Our Menu</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </header>
+    <main>
 
+        <section class="container content-section">
+            <h2 class="section-header">STARTERS</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Caesar Salad</span>
+                    <img class="shop-item-image" src="img/Salad Caesar.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Tom Yum</span>
+                    <img class="shop-item-image" src="img/Tom YUm.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">14.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Vegetable Soup</span>
+                    <img class="shop-item-image" src="img/vegetable-soup.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Halloumi Salad</span>
+                    <img class="shop-item-image" src="img/halloumi salad.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">T-Shirt</span>
+                    <img class="shop-item-image" src="Images/Shirt.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="Images/Cofee.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="recipeTotal">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">The Generics</h3>
+            <ul class="nav footer-nav">
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="Images/YouTube Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.spotify.com" target="_blank">
+                        <img src="Images/Spotify Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="Images/Facebook Logo.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
+<script src="js/restaurantMenu.js" async></script>
 
 </html>
