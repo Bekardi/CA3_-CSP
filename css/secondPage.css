@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"), url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: Raleway;
+}
+
+body {
+    background-image: url(../img/bgWallpaperImg.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #c1a272;
+    margin: 0px 0px;
+}
+
+
+/* Header */
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.26);
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+}
+
+.topnav:hover {
+    background-color: #000;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+
+/* 1*/
+
+#slideshow {
+    margin: 0px auto;
+    position: relative;
+    width: 100%;
+    padding: 1% 1% 56.25% 1%;
+    /*56.25 is for 16x9 resolution*/
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+}
+
+#slideshow>div {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+#slideshow>div>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+#slideshow:hover i,
+#slideshow:hover .slider-dots {
+    opacity: 1;
+}
+
+.slidebtn {
+    z-index: 99;
+    background: transparent;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+    padding: 0 10px 0 10px;
+}
+
+.slidebtn:active,
+.slidedtn:focus {
+    outline: none;
+}
+
+.slidebtn i {
+    color: #FFF;
+    font-size: 72px;
+    opacity: 0.2;
+    transition: all 0.3s;
+}
+
+.prev {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+}
+
+.next {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+}
+
+.slider-dots {
+    opacity: 0.2;
+    list-style: none;
+    display: inline-block;
+    padding-left: 0;
+    margin-bottom: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, 0);
+    z-index: 99;
+    transition: all 0.3s;
+}
+
+.slider-dots li {
+    color: #000;
+    display: inline;
+    font-size: 48px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.slider-dots li.active-dot {
+    color: #fff;
+}
+
+
+/*2  */
+
+.wrapper,
+input,
+button {
+    /*  width: 600px; */
+    font-family: 'Raleway', sans-serif;
+}
+
+.inner {
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+.back {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.search {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.product-picture {
+    margin: 30px 0 0 0;
+}
+
+.product-picture img {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 2px 1em grey;
+}
+
+.product-title {
+    font-size: 18px;
+}
+
+.product-text {
+    margin: 50px 0 30px 0;
+    font-size: 18px;
+}
+
+.table-number {
+    font-size: 50px;
+}
+
+.table {
+    line-height: 60px;
+}
+
+.table button {
+    color: black;
+    background: transparent;
+    border: 0px solid black;
+    border-radius: 2px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    /*   box-shadow: 0 2px 1em grey; */
+    /* box-shadow: 0 2px 1em grey; */
+}
+
+.table button:active {
+    transform: translate(0px, 2px);
+    -webkit-transform: translate(0px, 2px);
+    -moz-transform: translate(0px, 2px);
+    -ms-transform: translate(0px, 2px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+button:disabled {
+    opacity: 0.65;
+}
+
+.minus {
+    float: left;
+}
+
+.plus {
+    float: right;
+}
+
+.date-title {
+    margin-top: 30px;
+}
+
+.date-picker {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.date-picker>input {
+    border: none;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+}
+
+.date-picker>input[type="date"] {
+    top: 0;
+    left: -60px;
+}
+
+.date-picker>input[type="time"] {
+    top: 0px;
+    left: 160px;
+}
+
+.submit-btn {
+    margin: 20px 0 20px 0;
+}
+
+.submit-btn button {
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 200px;
+    height: 50px;
+    /*   box-shadow: 0 2px 1em grey; */
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.submit-btn button:active {
+    transform: translate(0px, 2px);
+    -webkit-transform: translate(0px, 2px);
+    box-shadow: 0px 1px 0px 0px;
+}
+
+button,
+input {
+    font-family: Marmelad;
+}
+
+.credit {
+    position: relative;
+    bottom: 0px;
+    left: 5px;
+    margin: 0px;
+    width: 50%;
+}
+
+.credit p {
+    display: inline;
+}
