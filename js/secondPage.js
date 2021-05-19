@@ -86,7 +86,12 @@ $(document).ready(function() {
     //slideshow
 });
 
-/* 2*/
+
+
+
+
+
+/* Booking a Table*/
 $(document).ready(function() {
     var number = 2;
     $(".table-number>strong").html(number);

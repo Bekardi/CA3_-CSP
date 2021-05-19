@@ -1,3 +1,4 @@
+/*storing the variables */
 let myInput = document.getElementById("pass");
 let letter = document.getElementById("letter");
 let capital = document.getElementById("capital");
@@ -7,13 +8,14 @@ let passLength = document.getElementById("passLength")
 
 
 
+/*will show the password requirments or block them */
 myInput.onfocus = function() {
     document.getElementById("checksField").style.display = "block";
 };
 myInput.onblur = function() {
     document.getElementById("checksField").style.display = "none";
 };
-
+/*will show if the user input matches  with the password requirments */
 myInput.onkeyup = function() {
     const lowerCaseLetters = /[a-z]/g;
     if (myInput.value.match(lowerCaseLetters)) {
@@ -69,7 +71,7 @@ window.onload = () => {
 }
 
 
-
+/*output the customers data from json */
 function getRandom() {
     fetch('https://randomuser.me/api/?results=9')
         .then((res) => res.json())
